@@ -4,7 +4,6 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 
 const Restaurant = require('./models/restaurant')
-const restaurant = require('./models/restaurant')
 
 const app = express()
 const port = 3000
