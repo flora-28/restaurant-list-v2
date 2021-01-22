@@ -39,5 +39,8 @@
     </div>
     <a href="/restaurants/{{restaurant._id}}/edit">編輯</a>
     <a href="/">首頁</a>
+    <form action="/restaurants/{{restaurant._id}}/delete" method="POST" style="display: inline">
+      <button type="submit">刪除</button>
+    </form>
   </div>
 </div>
