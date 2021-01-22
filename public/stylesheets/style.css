@@ -1,35 +1,50 @@
 body {
-  background-color: #363636;
+  background-color: #000000;
 }
 
 header {
   overflow: hidden;
 }
 
+.navbar {
+  font-family: 'Potta One', cursive;
+}
+
 .navbar .navbar-brand {
-  color: #FFDC35;
+  color: #000000;
 }
 
 .navbar .navbar-brand:hover {
-  color: #EAC100;
+  color: #0000007e;
+}
+
+.navbar .navbar-create-restaurant {
+  color: #000000;
+}
+
+.navbar .navbar-create-restaurant:hover {
+  color: #0000007e;
 }
 
 .banner {
   position: relative;
   z-index: -1;
   margin: -5px;
-  height: 360px;
-  background: #dddddd center center url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
+  height: 250px;
+  background: #dddddd center center url('https://i0.wp.com/my-cte.com/wp-content/uploads/2018/01/unnamed-file-68.jpg?fit=2000%2C1335&ssl=1');
   background-size: cover;
   filter: blur(3px);
 }
 
+.search-bar {
+  font-family: 'Potta One', cursive;
+}
+
 .search-bar .search-bar-outer {
   margin: 0 auto;
-  max-width: 680px;
-  background-color: #FFD306;
+  max-width: 450px;
   border-radius: 8px;
-  padding: 20px 30px;
+  padding: 15px 20px ;
   border: 0;
   margin-top: -60px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -38,6 +53,8 @@ header {
 .search-bar .search-bar-inner h4 {
   color: #000000;
 }
+
+
 
 .form-control::placeholder {
   color: #dfdbdb;
@@ -84,6 +101,22 @@ header {
   font-size: 4rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+.btn-new {
+  background-color: #671714;
+  color: white;
+}
+
+.new-form {
+  color: #000000;
+  font-weight: bold;
+  margin-top: 60px;
+  padding: 20px 30px;
+  background-color: #ebdebc;
+  width: 800px;
+  border-radius: 1%;
+}
+
 
 @media screen and (max-width: 992px) {
   
