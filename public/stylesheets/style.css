@@ -96,10 +96,14 @@ header {
 
 .restaurant-show-title {
   position: relative;
-  top: -200px;
+  top: -150px;
   text-align: center;
   font-size: 4rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.more-info {
+  align-items: end;
 }
 
 .btn-new {
