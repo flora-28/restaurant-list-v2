@@ -37,14 +37,19 @@ app.get('/restaurants/new', (req, res) => {
 })
 
 app.post('/restaurants', (req, res) => {
-  const name = req.body.name
-  const category = req.body.category
-  const image = req.body.image
-  const location = req.body.location
-  const phone = req.body.phone
-  const google_map = req.body.google_map
-  const rating = req.body.rating
-  const description = req.body.description
+  const restaurantItem = req.body
+  let rest = {
+    name: restaurantItem.name,
+    category: restaurantItem.category,
+    image: restaurantItem.image,
+    location: restaurantItem.location,
+    phone: restaurantItem.phone,
+    google_map: restaurantItem.google_map,
+    rating: restaurantItem.rating,
+    description: restaurantItem.description
+  }
+
+  let { name, category, image, location, phone, google_map, rating, description } = rest
 
   return Restaurant.create({
     name,
@@ -78,14 +83,20 @@ app.get('/restaurants/:id/edit', (req, res) => {
 
 app.post('/restaurants/:id/edit', (req, res) => {
   const id = req.params.id
-  const name = req.body.name
-  const category = req.body.category
-  const image = req.body.image
-  const location = req.body.location
-  const phone = req.body.phone
-  const google_map = req.body.google_map
-  const rating = req.body.rating
-  const description = req.body.description
+  const restaurantItem = req.body
+  let rest = {
+    name: restaurantItem.name,
+    category: restaurantItem.category,
+    image: restaurantItem.image,
+    location: restaurantItem.location,
+    phone: restaurantItem.phone,
+    google_map: restaurantItem.google_map,
+    rating: restaurantItem.rating,
+    description: restaurantItem.description
+  }
+
+  let { name, category, image, location, phone, google_map, rating, description } = rest
+
   return Restaurant.findById(id)
     .then(restaurant => {
       restaurant.name = name
