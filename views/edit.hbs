@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="new-form">
-      <form action="/restaurants/{{ restaurant._id }}/edit" method="POST">
+      <form action="/restaurants/{{ restaurant._id }}?_method=PUT" method="POST">
         <div class="form-row justify-content-center">
           <div class="form-group col-md-8">
             <label for="name">名稱</label>
