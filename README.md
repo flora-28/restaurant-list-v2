@@ -6,7 +6,7 @@ An update website to browse, search, create, update and delete restaurant, build
 ![create-img](https://raw.githubusercontent.com/flora-28/restaurant-list-v2/master/public/photos/create-img.jpg)
 
 ## Features
-1. Users can see all the restaurants and their simple information on the homepage:
+1. Users can browse all the restaurants and their simple information on the homepage:
    + Restaurant photo
    + Restaurant name
    + Restaurant category
@@ -22,6 +22,7 @@ An update website to browse, search, create, update and delete restaurant, build
 4. (NEW) Users can create the new restaurant 
 5. (NEW) Users can modify the restaurant information
 6. (NEW) Users can delete the restaurant in the homepage and in the detailed page
+7. (NEW) Users can sort restaurant by name or category
 
 ## Getting Started
 Clone repository to your local computer
@@ -32,9 +33,12 @@ Install by npm
 ```
 $ npm install
 ```
-Execute
+Run seeder
 ```
 $ npm run seed
+```
+Execute
+```
 $ npm run dev 
 ```
 Terminal show the message
@@ -49,8 +53,9 @@ http://localhost:3000
 + Node.js: v10.15.0
 + Express: v4.17.1
 + Express-Handlebars: v5.2.0
-+ body-parser: v1.19.0
-+ mongoose: v5.11.13
++ Body-Parser: v1.19.0
++ Mongoose: v5.11.13
++ Method-Override: v3.0.0
 
 ## Author
 Flora Peng
