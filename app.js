@@ -32,6 +32,30 @@ app.get('/', (req, res) => {
     .catch(error => console.log(error))
 })
 
+app.get('/asc', (req, res) => {
+  Restaurant.find()
+    .lean()
+    .sort({ name: 'asc' })
+    .then(restaurants => res.render('index', { restaurants }))
+    .catch(error => console.log(error))
+})
+
+app.get('/desc', (req, res) => {
+  Restaurant.find()
+    .lean()
+    .sort({ name: 'desc' })
+    .then(restaurants => res.render('index', { restaurants }))
+    .catch(error => console.log(error))
+})
+
+app.get('/category', (req, res) => {
+  Restaurant.find()
+    .lean()
+    .sort({ category: 'asc' })
+    .then(restaurants => res.render('index', { restaurants }))
+    .catch(error => console.log(error))
+})
+
 app.get('/restaurants/new', (req, res) => {
   return res.render('new')
 })
